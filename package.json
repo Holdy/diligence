@@ -1,0 +1,19 @@
+{
+    "name": "diligence",
+    "version": "0.1.1",
+    "main": "diligence.js",
+    "license": "MIT",
+    "scripts": {
+        "test": "./node_modules/jest/bin/jest.js",
+        "coverage": "./node_modules/jest/bin/jest.js --coverage",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "aws-sdk": "^2.683.0",
+        "pg": "^8.2.1"
+    },
+    "devDependencies": {
+        "jest": "^26.0.1",
+        "prettier": "^2.0.5"
+    }
+}
