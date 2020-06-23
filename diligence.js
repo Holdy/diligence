@@ -13,8 +13,6 @@ const awsS3 = require('./lib/awsS3');
 const awsLambda = require('./lib/awsLambda');
 const postgres = require('./lib/postgres/postgres');
 
-const x = environment.getText({ name: 'SDLC_ENV', allow: ['dev'] });
-
 function readTextFile(relativePath) {
     ensure.defined(relativePath, 'readTextFile - no file path was given');
     try {
