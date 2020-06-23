@@ -4,7 +4,9 @@ const sut = require('../../lib/firstClassFields');
 
 test('all fields should be usable as keys', () => {
     Object.keys(sut).forEach((exportKey) => {
-        expectToStringToMatchKeyField(sut[exportKey]);
+        if (exportKey !== 'keyToFieldMap') {
+            expectToStringToMatchKeyField(sut[exportKey]);
+        }
     });
 });
 
