@@ -1,6 +1,6 @@
 {
     "name": "diligence",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "main": "diligence.js",
     "license": "MIT",
     "scripts": {
