@@ -10,6 +10,7 @@ const awsSecretsManager = require('./lib/awsSecretsManager');
 const pipeline = require('./lib/pipeline');
 const json = require('./lib/json');
 const awsS3 = require('./lib/awsS3');
+const awsSqs = require('./lib/awsSqs');
 const awsLambda = require('./lib/awsLambda');
 const postgres = require('./lib/postgres/postgres');
 
@@ -36,6 +37,7 @@ module.exports.awsSecretsManager = awsSecretsManager;
 module.exports.pipeline = pipeline;
 module.exports.json = json;
 module.exports.awsS3 = awsS3;
+module.exports.awsSqs = awsSqs;
 module.exports.awsLambda = awsLambda;
 module.exports.postgres = postgres;
 module.exports.ensure = ensure;
