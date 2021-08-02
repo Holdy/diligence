@@ -1,6 +1,6 @@
 {
     "name": "diligence",
-    "version": "0.1.9",
+    "version": "0.1.10",
     "main": "diligence.js",
     "license": "MIT",
     "scripts": {
@@ -9,7 +9,7 @@
         "format": "prettier --write ."
     },
     "dependencies": {
-        "aws-sdk": "^2.848.0",
+        "aws-sdk": "^2.958.0",
         "pg": "^8.5.1"
     },
     "devDependencies": {
