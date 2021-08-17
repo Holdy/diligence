@@ -36,7 +36,7 @@ function sumField(list, field_name) {
         list.forEach(item => {
             const item_value = item[field_name];
             if (item_value != null) {
-                result += item_value;
+                result += Number(item_value);
             }
         });
     }
