@@ -30,6 +30,20 @@ function readTextFile(relativePath) {
     }
 }
 
+function sumField(list, field_name) {
+    let result = 0;
+    if (list && list.length > 0) {
+        list.forEach(item => {
+            const item_value = item[field_name];
+            if (item_value != null) {
+                result += item_value;
+            }
+        });
+    }
+    return result;
+}
+
+module.exports.sumField = sumField;
 module.exports.logError = logging.logError;
 module.exports.environment = environment;
 module.exports.logging = logging;
